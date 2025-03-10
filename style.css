@@ -1,0 +1,199 @@
+/** Resets **/
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+input,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/** Colors **/
+
+:root {
+  /** colors shared between several elements **/
+  --offshade-blue: hsl(220, 37%, 57%);
+  --light-green: hsla(85, 59%, 58%, 1);
+
+  /** backgrounds, headings and text **/
+  --main-background-color-peach: hsla(20, 100%, 80%, 1);
+  --main-text-color-white: hsla(0, 0%, 100%, 1);
+  --main-heading-color-blue-shade: var(--offshade-blue);
+  --input-groups-background-color-raisin-black-opacity: hsla(280, 9%, 20%, 0.75);
+  --footer-background-black: hsl(0, 0%, 0%);
+
+  /** button colors **/
+  --confirm-button-green: var(--light-green);
+  --confirm-button-hover-darkergreen: hsla(85, 59%, 45%, 1);
+
+  /** link colors **/
+  --link-unvisited-light-green: var(--light-green);
+  --link-visited-yellow: hsl(60, 100%, 50%);
+  --link-hover-blue-shade: var(--offshade-blue);
+}
+
+/** Page Grid Structure **/
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto 1fr auto;
+}
+main {
+  margin-bottom: 1rem;
+}
+
+footer {
+  width: 100%;
+}
+
+/** Styling **/
+
+/** Main structure styling **/
+html,
+body {
+  background-color: var(--main-background-color-peach);
+  color: var(--main-text-color-white);
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--main-heading-color-blue-shade);
+  padding-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--footer-background-black);
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/** Story input styling **/
+.text-input {
+  float: right;
+  border-radius: 5px;
+  padding-left: 0.2em;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  font-size: 1.32rem;
+}
+
+.descriptors {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.input-groups {
+  padding: 0.5em;
+  background-color: var(--input-groups-background-color-raisin-black-opacity);
+  border-radius: 20px;
+  margin-bottom: 1.2em;
+}
+
+.story {
+  margin: 30px auto;
+  width: 45%;
+  text-align: justify;
+  background-color: var(--input-groups-background-color-raisin-black-opacity);
+  padding: 2em;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+}
+
+textarea::placeholder {
+  padding-left: 0.2em;
+}
+
+/** Anchor tag styling **/
+a:link {
+  color: var(--link-unvisited-darkergreen);
+}
+
+a:visited {
+  color: var(--link-visited-yellow);
+}
+
+a:hover {
+  color: var(--link-hover-blue-shade);
+}
+
+/** Logos used for links **/
+.github-logo {
+  height: 1.25rem;
+}
+
+/* Buttons */
+
+#submit {
+  background-color: var(--confirm-button-green);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+#submit:hover {
+  background-color: var(--confirm-button-hover-darkergreen);
+  cursor: pointer;
+}
+
+/* Fonts */
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atma-light {
+  font-family: "Atma", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.atma-regular {
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atma-medium {
+  font-family: "Atma", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.atma-semibold {
+  font-family: "Atma", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.atma-bold {
+  font-family: "Atma", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}

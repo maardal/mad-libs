@@ -1,85 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>maardal mad libs - creation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <h1 class="chewy-regular">Mad Libs Story</h1>
+    </header>
     <main>
-      <h1>Mad Libs Story</h1>
       <form id="form" action="story.html" method="GET">
-        <p>Who is the story about:</p>
-        <label for="grp-1">Group of people:</label>
-        <input id="grp-1" type="text" name="grp-1" placeholder="teenagers..." required />
-        <br />
+        <div class="input-groups">
+          <p class="descriptors">Who is the story about:</p>
+          <label for="grp-1">A group</label>
+          <input id="grp-1" class="text-input" type="text" name="grp-1" placeholder="teenagers..." required />
+          <br />
 
-        <label for="grp-2">Group of people:</label>
-        <input id="grp-2" type="text" name="grp-2" placeholder="grandmothers..." required />
-        <br />
+          <label for="grp-2">Another group:</label>
+          <input id="grp-2" class="text-input" type="text" name="grp-2" placeholder="grandmothers..." required />
+          <br />
 
-        <label for="ani-1">Type of animal:</label>
-        <input id="ani-1" type="text" name="ani-1" placeholder="dog" required />
-        <br />
+          <label for="ani-1">A type of animal:</label>
+          <input id="ani-1" class="text-input" type="text" name="ani-1" placeholder="dog" required />
+          <br />
+        </div>
 
-        <p>Give us some funny adjectives:</p>
+        <div class="input-groups">
+          <p class="descriptors">Give us some funny adjectives:</p>
 
-        <label for="adj-1">Adjective:</label>
-        <input id="adj-1" type="text" name="adj-1" placeholder="funny.." required />
-        <br />
+          <label for="adj-1">#1</label>
+          <input id="adj-1" class="text-input" type="text" name="adj-1" placeholder="funny.." required />
+          <br />
 
-        <label for="adj-2">Adjective, ending with -ed:</label>
-        <input id="adj-2" type="text" name="adj-2" placeholder="funny.." required pattern="[a-zA-Z]+(ed)$" />
-        <br />
+          <label for="adj-2">#2 - ending with -ed</label>
+          <input id="adj-2" class="text-input" type="text" name="adj-2" placeholder="funny.." required pattern="[a-zA-Z]+(ed)$" />
+          <br />
 
-        <label for="adj-3">Adjective:</label>
-        <input id="adj-3" type="text" name="adj-3" placeholder="funny.." required />
-        <br />
+          <label for="adj-3">#3</label>
+          <input id="adj-3" class="text-input" type="text" name="adj-3" placeholder="funny.." required />
+          <br />
 
-        <label for="adj-4">Adjective:</label>
-        <input id="adj-4" type="text" name="adj-4" placeholder="funny.." required />
-        <br />
+          <label for="adj-4">#4</label>
+          <input id="adj-4" class="text-input" type="text" name="adj-4" placeholder="funny.." required />
+          <br />
 
-        <label for="adj-5">Adjective:</label>
-        <input id="adj-5" type="text" name="adj-5" placeholder="funny.." required />
-        <br />
+          <label for="adj-5">#5</label>
+          <input id="adj-5" class="text-input" type="text" name="adj-5" placeholder="funny.." required />
+          <br />
 
-        <label for="adj-6">Adjective, ending with -ed:</label>
-        <input id="adj-6" type="text" name="adj-6" placeholder="funny.." required pattern="[a-zA-Z]+(ed)$" />
-        <br />
+          <label for="adj-6">#6 - ending with -ed</label>
+          <input id="adj-6" class="text-input" type="text" name="adj-6" placeholder="funny.." required pattern="[a-zA-Z]+(ed)$" />
+          <br />
+        </div>
 
-        <p>And now some hilarous verbs:</p>
+        <div class="input-groups">
+          <p class="descriptors">And now some hilarous verbs:</p>
 
-        <label for="ver-1">Verb:</label>
-        <input id="ver-1" type="text" name="ver-1" placeholder="hilarous" required />
-        <br />
+          <label for="ver-1">#1</label>
+          <input id="ver-1" class="text-input" type="text" name="ver-1" placeholder="hilarous" required />
+          <br />
 
-        <label for="ver-2">Verb:</label>
-        <input id="ver-2" type="text" name="ver-2" placeholder="hilarous" required />
-        <br />
+          <label for="ver-2">#2</label>
+          <input id="ver-2" class="text-input" type="text" name="ver-2" placeholder="hilarous" required />
+          <br />
 
-        <label for="ver-3">Verb, ending with -ed:</label>
-        <input id="ver-3" type="text" name="ver-3" placeholder="hilarous" required pattern="[a-zA-Z]+(ed)$" />
-        <br />
+          <label for="ver-3">#3 - ending with -ed</label>
+          <input id="ver-3" class="text-input" type="text" name="ver-3" placeholder="hilarous" required pattern="[a-zA-Z]+(ed)$" />
+          <br />
+        </div>
 
-        <label for="tim-1">An amount of time (only number):</label>
-        <input id="tim-1" type="number" name="tim-1" placeholder="69" required min="1" />
-        <br />
+        <div class="input-groups">
+          <p class="descriptors">Time</p>
 
-        <p>Quotes:</p>
+          <label for="tim-1">An amount of time </label>
+          <input id="tim-1" class="text-input" type="number" name="tim-1" placeholder="69" required min="1" />
+          <br />
+        </div>
 
-        <label for="quote">A comforting sentence:</label>
-        <br />
-        <textarea id="quote" name="quote" placeholder="When you need a hug, give a hug" required maxlength="250" cols="75" rows="4"></textarea>
-        <br />
+        <div class="input-groups">
+          <p class="descriptors">Quotes:</p>
 
-        <label for="message">Inspirational qoute:</label>
-        <br />
-        <textarea id="message" name="message" placeholder="Men Strong, Woman Strong, Together strong" required maxlength="250" cols="75" rows="4"></textarea>
-        <br />
+          <label for="quote">A comforting sentence:</label>
+          <br />
+          <textarea id="quote" name="quote" placeholder="When you need a hug, give a hug" required maxlength="250" cols="75" rows="4"></textarea>
+          <br />
+
+          <label for="message">Inspirational qoute:</label>
+          <br />
+          <textarea id="message" name="message" placeholder="Men Strong, Woman Strong, Together strong" required maxlength="250" cols="75" rows="4"></textarea>
+          <br />
+        </div>
 
         <br />
         <br />
-        <input id="submit" type="submit" name="submit" value="Send your story" />
+        <input id="submit" type="submit" name="submit" value="Make a story" />
       </form>
     </main>
+    <footer>
+      <p class="footer-description">A small digital <a href="https://en.wikipedia.org/wiki/Mad_Libs" target="_blank">madlibs</a> clone.</p>
+      <p>
+        Made by <a href="https://www.github.com/maardal" target="_blank"><img class="github-logo" src="static/github-mark-white.svg" /> maardal.</a>
+      </p>
+    </footer>
   </body>
 </html>
