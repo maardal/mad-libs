@@ -131,7 +131,7 @@ textarea::placeholder {
   font-size: 1.5rem;
 }
 
-/** Anchor tag styling **/
+/** Anchor tag styling  + transitions **/
 a:link {
   color: var(--link-unvisited-darkergreen);
 }
@@ -142,6 +142,7 @@ a:visited {
 
 a:hover {
   color: var(--link-hover-blue-shade);
+  transition: color 0.25s ease-in 50ms;
 }
 
 /** Logos used for links **/
@@ -160,6 +161,7 @@ a:hover {
 #submit:hover {
   background-color: var(--confirm-button-hover-darkergreen);
   cursor: pointer;
+  transition: background-color 0.25s ease-in 50ms;
 }
 
 /* Fonts */
