@@ -50,6 +50,7 @@ body {
 }
 main {
   margin-bottom: 1rem;
+  width: 30%;
 }
 
 footer {
@@ -69,11 +70,28 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
-  font-size: 4rem;
   color: var(--main-heading-color-blue-shade);
+}
+
+h1 {
+  font-size: 4rem;
   padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+#faq {
+  margin-top: 2rem;
 }
 
 footer {
@@ -123,12 +141,32 @@ textarea::placeholder {
 /** Story styling **/
 .story {
   margin: 30px auto;
-  width: 45%;
   text-align: justify;
   background-color: var(--input-groups-background-color-raisin-black-opacity);
   padding: 2em;
   border-radius: 0.5rem;
   font-size: 1.5rem;
+}
+
+/** FAQ section **/
+.question {
+  margin-top: 0.5rem;
+}
+
+.question summary {
+  font-size: 2rem;
+  color: var(--main-heading-color-blue-shade);
+  width: 95%;
+  display: flex; /** removes the arrow marker **/
+  cursor: pointer;
+}
+
+.question p {
+  font-size: 1.5rem;
+  color: var(--main-heading-color-blue-shade);
+  width: 95%;
+  margin-top: 0.5rem;
+  text-align: justify;
 }
 
 /** Anchor tag styling  + transitions **/
