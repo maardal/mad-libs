@@ -35,6 +35,8 @@ select {
   --link-unvisited-light-green: var(--light-green);
   --link-visited-yellow: hsl(60, 100%, 50%);
   --link-hover-blue-shade: var(--offshade-blue);
+
+  interpolate-size: allow-keywords;
 }
 
 /** Page Grid Structure **/
@@ -149,11 +151,22 @@ textarea::placeholder {
 }
 
 /** FAQ section **/
-.question {
+details {
   margin-top: 0.5rem;
 }
 
-.question summary {
+details::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition: block-size 0.5s ease-out, content-visibility 1s;
+  transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+  block-size: auto;
+}
+
+details summary {
   font-size: 2rem;
   color: var(--main-heading-color-blue-shade);
   width: 95%;
@@ -161,7 +174,7 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.question p {
+details p {
   font-size: 1.5rem;
   color: var(--main-heading-color-blue-shade);
   width: 95%;
