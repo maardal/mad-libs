@@ -17,7 +17,7 @@
     </header>
     <main>
       <form id="form" action="story.html" method="GET">
-        <div class="input-groups">
+        <fieldset class="input-groups">
           <p class="descriptors">Who is the story about:</p>
           <label for="grp-1">A group</label>
           <input id="grp-1" class="text-input" type="text" name="grp-1" placeholder="teenagers..." required />
@@ -30,9 +30,9 @@
           <label for="ani-1">A type of animal:</label>
           <input id="ani-1" class="text-input" type="text" name="ani-1" placeholder="dog" required />
           <br />
-        </div>
+        </fieldset>
 
-        <div class="input-groups">
+        <fieldset class="input-groups">
           <p class="descriptors">Give us some funny adjectives:</p>
 
           <label for="adj-1">#1</label>
@@ -58,9 +58,9 @@
           <label for="adj-6">#6 - ending with -ed</label>
           <input id="adj-6" class="text-input" type="text" name="adj-6" placeholder="funny.." required pattern="[a-zA-Z]+(ed)$" />
           <br />
-        </div>
+        </fieldset>
 
-        <div class="input-groups">
+        <fieldset class="input-groups">
           <p class="descriptors">And now some hilarous verbs:</p>
 
           <label for="ver-1">#1</label>
@@ -74,17 +74,17 @@
           <label for="ver-3">#3 - ending with -ed</label>
           <input id="ver-3" class="text-input" type="text" name="ver-3" placeholder="hilarous" required pattern="[a-zA-Z]+(ed)$" />
           <br />
-        </div>
+        </fieldset>
 
-        <div class="input-groups">
+        <fieldset class="input-groups">
           <p class="descriptors">Time</p>
 
           <label for="tim-1">An amount of time </label>
           <input id="tim-1" class="text-input" type="number" name="tim-1" placeholder="69" required min="1" />
           <br />
-        </div>
+        </fieldset>
 
-        <div class="input-groups">
+        <fieldset class="input-groups">
           <p class="descriptors">Quotes:</p>
 
           <label for="quote">A comforting sentence:</label>
@@ -96,10 +96,8 @@
           <br />
           <textarea id="message" name="message" placeholder="Men Strong, Woman Strong, Together strong" required maxlength="250" cols="75" rows="4"></textarea>
           <br />
-        </div>
+        </fieldset>
 
-        <br />
-        <br />
         <input id="submit" type="submit" name="submit" value="Make a story" />
       </form>
 
