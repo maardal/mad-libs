@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 textarea,
 input,
 button,
@@ -36,6 +40,7 @@ select {
   --link-visited-yellow: hsl(60, 100%, 50%);
   --link-hover-blue-shade: var(--offshade-blue);
 
+  /** Set to be able to animate to height:auto for details and summary elements **/
   interpolate-size: allow-keywords;
 }
 
@@ -48,10 +53,11 @@ body {
   min-height: 100%;
   display: grid;
   justify-items: center;
+  align-content: space-between;
   grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
 }
 main {
-  margin-bottom: 1rem;
   width: 30%;
 }
 
@@ -107,7 +113,7 @@ footer {
 .text-input {
   float: right;
   border-radius: 5px;
-  padding-left: 0.2em;
+  padding-left: 0.2rem;
 }
 
 label {
@@ -125,10 +131,10 @@ textarea {
 }
 
 .input-groups {
-  padding: 0.5em;
+  padding: 0.5rem;
   background-color: var(--input-groups-background-color-raisin-black-opacity);
   border-radius: 20px;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.2rem;
 }
 
 textarea {
@@ -137,7 +143,7 @@ textarea {
 }
 
 textarea::placeholder {
-  padding-left: 0.2em;
+  padding-left: 0.2rem;
 }
 
 /** Story styling **/
@@ -145,9 +151,9 @@ textarea::placeholder {
   margin: 30px auto;
   text-align: justify;
   background-color: var(--input-groups-background-color-raisin-black-opacity);
-  padding: 2em;
+  padding: 2rem;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 /** FAQ section **/
