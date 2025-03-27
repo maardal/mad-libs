@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,26 +17,26 @@
     </header>
     <main>
       <form id="form" action="story.html" method="GET">
-        <fieldset class="input-groups">
-          <p class="descriptors">Who is the story about:</p>
+        <section class="input-groups">
+          <h2 class="descriptors">Who is the story about</h2>
           <div class="question-answer">
             <label for="grp-1">A group</label>
             <input id="grp-1" class="text-input" type="text" name="grp-1" placeholder="teenagers..." required />
           </div>
 
           <div class="question-answer">
-            <label for="grp-2">Another group:</label>
+            <label for="grp-2">Another group</label>
             <input id="grp-2" class="text-input" type="text" name="grp-2" placeholder="grandmothers..." required />
           </div>
 
           <div class="question-answer">
-            <label for="ani-1">A type of animal:</label>
+            <label for="ani-1">A type of animal</label>
             <input id="ani-1" class="text-input" type="text" name="ani-1" placeholder="dog" required />
           </div>
-        </fieldset>
+        </section>
 
-        <fieldset class="input-groups">
-          <p class="descriptors">Give us some funny adjectives:</p>
+        <section class="input-groups">
+          <h2 class="descriptors">Give us some funny adjectives</h2>
           <div class="question-answer">
             <label for="adj-1">#1</label>
             <input id="adj-1" class="text-input" type="text" name="adj-1" placeholder="funny.." required />
@@ -66,10 +66,10 @@
             <label for="adj-6">#6 - ending with -ed</label>
             <input id="adj-6" class="text-input" type="text" name="adj-6" placeholder="funny.." required pattern="[a-zA-Z]+(ed)$" />
           </div>
-        </fieldset>
+        </section>
 
-        <fieldset class="input-groups">
-          <p class="descriptors">And now some hilarous verbs:</p>
+        <section class="input-groups">
+          <h2 class="descriptors">And now some hilarous verbs</h2>
           <div class="question-answer">
             <label for="ver-1">#1</label>
             <input id="ver-1" class="text-input" type="text" name="ver-1" placeholder="hilarous" required />
@@ -84,29 +84,29 @@
             <label for="ver-3">#3 - ending with -ed</label>
             <input id="ver-3" class="text-input" type="text" name="ver-3" placeholder="hilarous" required pattern="[a-zA-Z]+(ed)$" />
           </div>
-        </fieldset>
+        </section>
 
-        <fieldset class="input-groups">
-          <p class="descriptors">Time</p>
+        <section class="input-groups">
+          <h2 class="descriptors">Time</h2>
           <div class="question-answer">
             <label for="tim-1">An amount of time </label>
             <input id="tim-1" class="text-input" type="number" name="tim-1" placeholder="69" required min="1" />
           </div>
-        </fieldset>
+        </section>
 
-        <fieldset class="input-groups">
-          <p class="descriptors">Quotes:</p>
+        <section class="input-groups">
+          <h2 class="descriptors">Quotes</h2>
 
           <div>
-            <label for="quote">A comforting sentence:</label>
+            <label for="quote">A comforting sentence</label>
             <textarea id="quote" name="quote" placeholder="When you need a hug, give a hug" required maxlength="250" cols="75" rows="4"></textarea>
           </div>
 
           <div>
-            <label for="message">Inspirational qoute:</label>
+            <label for="message">Inspirational qoute</label>
             <textarea id="message" name="message" placeholder="Men Strong, Woman Strong, Together strong" required maxlength="250" cols="75" rows="4"></textarea>
           </div>
-        </fieldset>
+        </section>
 
         <input id="submit" type="submit" name="submit" value="Make a story" />
       </form>
@@ -137,9 +137,7 @@
     </main>
     <footer>
       <p class="footer-description">A small digital <a href="https://en.wikipedia.org/wiki/Mad_Libs" target="_blank">madlibs</a> clone.</p>
-      <p>
-        Made by <a href="https://www.github.com/maardal" target="_blank"><img class="github-logo" src="static/github-mark-white.svg" /> maardal.</a>
-      </p>
+      <p>Made by <a href="https://www.github.com/maardal" target="_blank"> maardal.</a></p>
     </footer>
   </body>
 </html>
